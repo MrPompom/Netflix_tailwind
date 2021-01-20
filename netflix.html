@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="dark">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=0.1"/>
+
+    <title>Netflix</title>
+
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="bg-cover bg-center bg-no-repeat bg-local pb-48" style="background-image: url(./src/naruto_bg1.jpg)">
+    <section class="">
+        <!--bg-cover bg-center bg-no-repeat bg-local pb-64 mb-20" style="background-image: url(./src/naruto_bg1.jpg)-->
+        <!--header-->
+        <div class="flex">
+            <div class="flex ml-10 space-x-10 items-center text-white text-1xl">
+                <img src="./src/Netflix-Logo.png" alt="netflix"class="w-1/12">
+                <div class="flex space-x-10">
+                    <!--partie gauche-->
+                    <a href="file:///D:/travail/CSS/Netflix_tailwind/netflix.html" class="pl-4 hover:font-bold">Home</a>
+                    <a href="#" class="hover:font-bold">TV Shows</a>
+                    <a href="#" class="hover:font-bold">Movies</a>
+                    <a href="#" class="hover:font-bold">New & Popular</a>
+                    <a href="#" class="hover:font-bold">My List</a>
+                    <a href="#" class="hover:font-bold">Watch Again</a>
+                </div>
+            </div>
+            <div class=" mr-12 pr-12 flex items-center">
+                <!--partie droite-->
+                <i class="fas fa-search text-white text-2xl mr-8"></i>
+                <i class="fas fa-gift text-white text-2xl mr-8"></i>
+                <i class="fas fa-bell text-white text-2xl mr-8"></i>
+                <img src="./src/user.png" alt="user" class="w-12 mr-2 rounded-lg">
+                <i class="fas fa-sort-up text-white text-2xl transform rotate-180"></i>
+            </div>
+        </div>
+        <!--présentation-->
+        <div class="space-y-10 mt-40 ml-16">
+            <!--logo-->
+            <img src="./src/naruto_logo.png" alt="naruto_logo" class="w-1/4 ">
+            <!--synop-->
+            <div class="text-white">
+                <p>Cette série animée suit les aventures de Naruto,</p>
+                <p>un orphelin qui puise dans sa force intérieure et<p>
+                <p>l'esprit démoniaque qui l'habite pour devenir ninja.<p>
+            </div>
+            <!--bouton-->
+            <div class="flex space-x-8">
+                <div class="bg-white rounded-lg px-10 py-2">
+                    <i class="fas fa-play text-black mr-2"></i>
+                    <input type="submit" value="Play" class=" text-black bg-white wx-5">
+                </div>
+                <div class="bg-gray-900 bg-opacity-25 hover:bg-opacity-50 rounded-lg px-10 py-2">
+                    <i class="fas fa-info-circle text-white mr-2"></i>
+                    <input type="submit" value="More Info" class=" text-white bg-gray-900 bg-opacity-0 wx-5">
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
