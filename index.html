@@ -14,14 +14,15 @@
         <style>
             .pics {
                 min-width: 16%;
-            }
-
+                }
+ 
             .container-carousel .carousel {
                 display: flex;
-            }
-
+             }
+ 
             .container-carousel {
                 overflow-x: scroll;
+                overflow: hidden;
                 scroll-behavior: smooth;
             }
         </style>
@@ -29,9 +30,8 @@
     </head>
 
     <body class="bg-black">
-        <!--header-->
-        <!--linear-gradient pour changement de couleur-->
-        <section class="fixed flex justify-between bg-gradient-to-b from-black to-transparent">
+        <!--navigation-->
+        <section class="fixed top-0 flex justify-between bg-gradient-to-b from-black to-transparent ">
                 <!--partie gauche-->
             <div class="flex my-2 ml-12 pl-3">
                 <div class="flex space-x-6 text-white text-sm" style>
@@ -57,16 +57,16 @@
                 </div>
             </div>
         </section>
-        <section class="bg-cover bg-local" style="background-image: url(https://occ-0-55-56.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABaMD9Ded8KwMoVnxYatlNw9lOtOWPS_JGI0RXLNfzkBSgDEBUyBS4HmzYQVVbYvALtRuJ4rAd7asNWToUh52EkYLsjlH.webp?r=ed3" alt="naruto_logo">  
-            <!--présentation-->
+        <!--header-->
+        <section class="bg-cover bg-local" style="background-image: url(https://occ-0-55-56.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABfn9TE5bEdnxtR9No0rbxx1gE3RpsVwS__wo9X91FKEGKOUElENQHQ1AuTdCIwFMKgPWq7rv4_gUrN7YQLwDRRUoax6o.webp?r=439" alt="naruto_logo">  
             <div class="flex flex-col space-y-8 pt-56 ml-16">
                 <!--logo-->
                 <img class="w-1/4" src="./src/naruto_logo.png" alt="naruto_logo">
                 <!--synop-->
                 <div class="text-gray-300 font-semibold font-bold text-3xl">
-                    <p>Cette série animée suit les aventures de Naruto,</p>
-                    <p>un orphelin qui puise dans sa force intérieure et<p>
-                    <p>l'esprit démoniaque qui l'habite pour devenir ninja.<p>
+                    <p>Deux ans après la Qautième Grande Guerre Shinobi,</p>
+                    <p>alors que la Lune menace d'entrer en collision avec la terre,<p>
+                    <p>Naruto se voit confier le destin de l'humanité.<p>
                 </div>
                 <!--bouton-->
                 <div class="flex space-x-4">
@@ -83,107 +83,422 @@
             <div class="flex flex-col justify-center pt-32 pl-16 bg-gradient-to-t from-black via to-transparent">
                 <h1 class="text-white font-semibold text-3xl mb-2">Reprendre avec le profil de Bastien</h1>
                 <div class="flex space-x-2">
-                    <a href="#naruto" class=" block w-1/6"><img class=" rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABduGFI3ZQgwTfjyfsrTPw-lbmpK0BlGSsLQI4SzThQfS-4KYcaDH706ouV-sUV0KLtSvhq8xKnbzdpC7LzL1Ims6I7g.webp?r=f87" alt="naruto"></a>
-                    <a href="#naruto shipuden" class=" w-1/6"><img class=" rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbLWvkI39MhmTbTQWuWeMkyQwlAeW4irTDi4yN8yObOz4obkolyFasuC1zkSYltOGaOMLSUJ2TpLzlAoMqKNTrOESwxP.webp?r=182" alt="shipuden"></a>
+                    <a href="#naruto" class="w-1/6"><img class=" rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABduGFI3ZQgwTfjyfsrTPw-lbmpK0BlGSsLQI4SzThQfS-4KYcaDH706ouV-sUV0KLtSvhq8xKnbzdpC7LzL1Ims6I7g.webp?r=f87" alt="naruto"></a>
+                    <a href="#naruto shipuden" class="w-1/6"><img class=" rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABbLWvkI39MhmTbTQWuWeMkyQwlAeW4irTDi4yN8yObOz4obkolyFasuC1zkSYltOGaOMLSUJ2TpLzlAoMqKNTrOESwxP.webp?r=182" alt="shipuden"></a>
                 </div>
             </div>
         </section>
+        <!--main-->
         <section class="text-white">
-            <div class="py-10">
-                <h2 class="font-semibold text-3xl mb-2 ml-16">Séries palpitantes</h2>
+            <!--car_1-->
+            <div class="py-10 pl-16">
+                <h2 class="font-semibold text-3xl mb-2">Les plus gros succès sur Netflix</h2>
 
-                <div class="flex item-center relative">
-
-                    <!-- arrow right -->
-                    <div class="absolute left-0 ml-16 left-arrow">
-                        <button class="p-4 h-48 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-left"></i></button>
+                <div class="flex items-center relative">
+ 
+                    <!-- arrow left -->
+                    <div class="absolute left-0 left-arrow">
+                    <button class="p-6 h-48 text-6xl hover:bg-black hover:opacity-50 focus:outline-none"><i class=""></i>‹</button>
                     </div>
-
-                    <div class="ml-16 container-carousel">
+                    
+                    <div class="container-carousel">
                         <div class="carousel grid gap-1">
-                            <!--image-->
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABT11wADji0dND8WcoYNA2dUA2n-rqcmxvA_mxLLNLbQZHR5MfcxVlcS4ZTrJUSK9FFdOFiMr6PM1v6NZh_mvKfMcRLA.webp?r=22b" alt="" class="rounded"></a>
                             </div>
-
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABRezdESENyhKqNUQWk6Biajk-MT4oHTLnQPBmriS8PArhMAD-XLsQU1lQw6H-Ixywdv0-XTFLrAHZawrNFapcteeudJJabn0pgk2WEwVi50ftk1qDI7yIyQjIE4Qiiw78w.webp?r=fcb" alt="" class="rounded"></a>
+                            </div>                          
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABWvWEKmkhXndcR5vjL4TTMPCdtsbVdPHUddCjAPXUu6sIKtVRxXb3vlRJv1Dd78mTJyvc7PsvoW_Xd2b21ziSoAfzEQ.webp?r=725" alt="" class="rounded"></a>
+                            </div>                          
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABVwrF3eG4g0MOPq2Ib24dVGQ3--DFaUG6k6E9hqhxY1DSH-_C4ObEQw2dY1qdnEbwyStrYQE7EKw9PEcq7mvCVWXREo.webp?r=f9d" alt="" class="rounded"></a>
+                            </div>                           
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXbsdw4a-jDB1l1CU1-WCK6Ztx4-oDYfqtBCQZQza33CLcOjSl3V0m6W7_ASy0uKB1VswvaYnq3MnyfpHFuRXWhewfpKhMO_cfMrRy-KVLR-VXrAU06VnDMgTB4s.jpg?r=fce" alt="" class="rounded"></a>
+                            </div>                           
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABQkeHHAextE8ErfAu3JYMSX-swrRYdAUSIrbgrZf07DjOm-kyF1021ssMlby71PnpSRwILqKA2ugXRRQHJoG7CgpLVw.webp?r=ab5" alt="" class="rounded"></a>
+                            </div>                        
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABaSkpyPfN7jAki3z7-rCKDydmCwW90NnH5p8uwSXKQYMyZo53ZLZAaF3dY5w2BAoKffs9rGsgfldTpOYTTE7IZWNS6g.webp?r=9ff" alt="" class="rounded"></a>
+                            </div>                        
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABV8iDgJjJM-db6AsmJn1laLKP512TK1ro-L8geJ1jakPmg8DOj0YadqUc-bvFKKlTL01Ssh08gNg0MHjSb2TuyMwqKkxKbL09IzHddTot0qPLoRCGzKH7G3gqcWBj90fY4DrtbilpUyMmBZ7m6xiLlPxkE84i1J1RJLdP9NrvBWmjx4xzHH7aYI.jpg?r=f44" alt="" class="rounded"></a>
+                            </div>                       
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
-                            </div>
-
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABagowL_ia5FYT5WQGXAhzbowF942B-sD4_PZCvcEkD-UYf3hAi_xkksSgARD6LLrkmUKDkXOpzkiY38On0ZpbDnTsf4.webp?r=e24" alt="" class="rounded"></a>
+                            </div>                         
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABTEUPFrOR85vZMCO6TeZxJtSpSOH1qhKdODTSaAjeAGsh9TMeytM16thVENJ089E73Vp_Fsu6lfli12CDLpMXkueAEM.webp?r=fb2" alt="" class="rounded"></a>
                             </div>
-
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABZmcGEnRtn6PFmmlsY_vDBtK8W0_7gFZzE9X2JnrSSk8EWtCmeBU1XmWOr6BHHZ1iMuU-z5-DnwTOQPliKoh3d1KT9oYsbte-uwi0j4UFZnyjW38DLDQZqD1xcfrtYsbTnucY0Uz9Gt7TtXP1p-w_4XgcBpmlw.jpg?r=826" alt="" class="rounded"></a>
                             </div>
-
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABfZ2Bcz5hft2uMg6_zdJwohdBO2lPutYz4btR-81M9z71x9Ra-UI_DW3ptWGYPLnLHhYrEaQGnhHWokPjy8W89ZYCDp0uyFZ1emiutKFE30DMbVKcwUtjmnsVJmhJp50iqfzOJQvPE10B5g15o72mg-hbcPcxA.jpg?r=fba" alt="" class="rounded"></a>
                             </div>
-
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABdz1cfoXqzfQWTc6ph-LTk-QpASr01R51lniacvDWSjpOXUhMgwagcoBk2Uzcw-d4i2eRKqt_tcq7W_8AEEdIfZqGcrEKazmtSBq20eWMaCG-7YgHnRqdYctFEw34X-yE_8JntJ3RQJWfAiUWVcusiVNhItdNZOnch9LODD0F4epwx7AtUgfYeM.jpg?r=fd0" alt="" class="rounded"></a>
                             </div>
-
                             <div class="pics">
-                                <a href="#" class=""><img class="rounded" src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="Animals"></a>
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABXc9CuEzhly3U4SsnLgG8Hfw50MGinzPJv2Q-1lmBAsmzfR1Af5TTeqPRMykimFulpQumpZRaYUz5XOCwMEIaJssT0ID2VnVMVrRMnWpqTf49JjDLLhHIp5JwsTO.jpg?r=510" alt="" class="rounded"></a>
                             </div>
-
-                            <!-- arrow right -->
-
-                            <div class="absolute right-0 right-arrow">
-                                <button class="p-6 h-48 hover:bg-black hover:opacity-50 focus:outline-none"><i class="fas fa-angle-right"></i></button>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABUvktC-cPEUrJw_4fwLuC_zRltWNEXnPGMyLyPzkvDl6u7EourIrZHgRjz4lYYQk3IaJ_4W5PCx75q5bxX2s78X53jc.webp?r=158" alt="" class="rounded"></a>
                             </div>
-                        </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABX3BCAfM3qicVqws3YtEJBYAYd46MlYU-1Z9soxyZFCtCKx6l5vqYVhWF57dm9L5mUJaslBg28_jmLoRaRl42H8W-v101ZmqYwYr5bxQRSwVe-varVv5ZcDsiUWl5AIDlgPstkgEqp3PLNdP7ODe20K8U2pKvitzcjaZk_tLCXBfqUw2qkUeNOU.jpg?r=311" alt="" class="rounded"></a>
+                            </div>
+                        </div> 
                     </div>
+                    
+                    <!-- arrow right -->
+                    <div class="absolute right-0 right-arrow">
+                    <button class="p-6 h-48 hover:bg-black text-6xl hover:opacity-50 focus:outline-none"><i class=""></i>›</button>
+                    </div>
+                </div>
+            </div>
+            <!--car_2-->
+            <div class="py-10 pl-16">
+                <h2 class="font-semibold text-3xl mb-2">Séries palpitantes</h2>
+
+                <div class="flex items-center relative">
+ 
+                    <!-- arrow left -->
+                    <div class="absolute left-0 left-arrow">
+                        <button class="p-6 h-48 text-6xl hover:bg-black hover:opacity-50 focus:outline-none"><i class=""></i>‹</button>
+                    </div>
+                    
+                    <div class="container-carousel">
+                        <div class="carousel grid gap-1">
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <!-- arrow right -->
+                    <div class="absolute right-0 right-arrow">
+                        <button class="p-6 h-48 hover:bg-black text-6xl hover:opacity-50 focus:outline-none"><i class=""></i>›</button>
+                    </div>
+                    
+                    </div>
+            </div>
+            <!--car_3-->
+            <div class="py-10 pl-16">
+                <h2 class="font-semibold text-3xl mb-2">Séries palpitantes</h2>
+
+                <div class="flex items-center relative">
+ 
+                    <!-- arrow left -->
+                    <div class="absolute left-0 left-arrow">
+                        <button class="p-6 h-48 text-6xl hover:bg-black hover:opacity-50 focus:outline-none"><i class=""></i>‹</button>
+                    </div>
+                    
+                    <div class="container-carousel">
+                        <div class="carousel grid gap-1">
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                          
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                          
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                           
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                           
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                        
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                        
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                       
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                         
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <!-- arrow right -->
+                    <div class="absolute right-0 right-arrow">
+                        <button class="p-6 h-48 hover:bg-black text-6xl hover:opacity-50 focus:outline-none"><i class=""></i>›</button>
+                    </div>
+                    
+                    </div>
+            </div>
+            <!--car_4-->
+            <div class="py-10 pl-16">
+                <h2 class="font-semibold text-3xl mb-2">Séries palpitantes</h2>
+
+                <div class="flex items-center relative">
+ 
+                    <!-- arrow left -->
+                    <div class="absolute left-0 left-arrow">
+                        <button class="p-6 h-48 text-6xl hover:bg-black hover:opacity-50 focus:outline-none"><i class=""></i>‹</button>
+                    </div>
+                    <div class="container-carousel">
+                        <div class="carousel grid gap-1">
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                          
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                          
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                           
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                           
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                        
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                        
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                       
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>                         
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                            <div class="pics">
+                                <a href="#1"><img src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/X194eJsgWBDE2aQbaNdmCXGUP-Y/AAAABcoQ9TPn-2b2LyV0XFdx9UPLzHA_wtcTDI9nmncOIaYlDitpMfujYccfjcyhtxYX8k709El1oamb9cwurZbfKaGivmo.webp?r=01e" alt="" class="rounded"></a>
+                            </div>
+                        </div> 
+                    </div>
+                    
+                    <!-- arrow right -->
+                    <div class="absolute right-0 right-arrow">
+                        <button class="p-6 h-48 hover:bg-black text-6xl hover:opacity-50 focus:outline-none"><i class=""></i>›</button>
+                    </div>
+                    
+                    </div>
+            </div>
+            <!--catégorie film/série-->
+            <div class="py-10 mx-16">
+                <h2 class="font-semibold text-3xl mb-2">Séries par Genre</h2>
+                <!--photo catégorie-->
+                <div class="grid gap-2 grid-cols-7">
+                    <div class="rounded" style="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1" class="bg-black"><img class="" src="./src/fairy_gen.png" alt="bg-black" class=" bg-black rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl">anime</p>
+                        <a href="#1" class="bg-black"><img class="" src="./src/fairy_gen.png" alt="bg-black" class=" bg-black rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                    <div class="">
+                        <p class="absolute text-white text-xl font-semibold">anime</p>
+                        <a href="#1"><img src="./src/fairy_gen.png" alt="" class="rounded"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--footer-->
+        <section class="flex justify-center mt-5 mb-1">
+            <div class="space-y-2 w-1/2">
+                <!--social-link-->
+                <div class="flex text-gray-500 text-3xl space-x-5">
+                    <a href="#1" class=""><i class="fab fa-facebook-square"></i></a>
+                    <a href="#1" class=""><i class="fab fa-instagram"></i></a>
+                    <a href="#1" class=""><i class="fab fa-twitter"></i></a>
+                    <a href="#1" class=""><i class="fab fa-youtube"></i></a>
+                </div>
+                <!--footer_write-->
+                <div class="flex justify-between">
+                    <div class="flex flex-col text-sm">
+                        <a href="#1" class="text-gray-500 hover:underline">Audio et sous-titres</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Presse</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Confidentialité</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Nous contacter</a>
+                    </div>
+                    <div class="flex flex-col text-sm">
+                        <a href="#1" class="text-gray-500 hover:underline">Audiodescription</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Relation Investisseurs</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Informations légales</a>
+                    </div>
+                    <div class="flex flex-col text-sm">
+                        <a href="#1" class="text-gray-500 hover:underline">Centre d'aide</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Recrutement</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Préférence de cookies</a>
+                    </div>
+                    <div class="flex flex-col text-sm">
+                        <a href="#1" class="text-gray-500 hover:underline">Cartes cadeaux</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Conditions d'utilisation</a>
+                        <a href="#1" class="text-gray-500 hover:underline">Mentions légales</a>
+                    </div>
+                </div>
+                <!--button-->
+                <div class="pt-4">
+                    <button class="text-gray-500 bg-transparent border border-gray-500 px-2 py-1"><p class="text-sm hover:text-white">Code de service</p></button>
+                </div>
+                <!--copyrigth-->
+                <div class="flex text-gray-500 text-xs align-center">
+                    <p class="items-center">© 1997-2021 Netflix, Inc. {i-090caa3ac45153401</p>
+                </div>
             </div>
         </section>
     </body>
     <script>
-        const carousel = document.querySelector('.container-carousel');             
+ 
+        const carousel = document.querySelector('.container-carousel');
         
-        const left = document.querySelector('.left-arrow');      
-        const right = document.querySelector('.right-arrow');      
-        
+        const left = document.querySelector('.left-arrow');
+        const right = document.querySelector('.right-arrow');
+        console.log(left, right)
         // // right -> Event listener //
-               
-        right.addEventListener("click", () => {​​        
-        carousel.scrollLeft +=carousel.offsetWidth;        
-        }​​);      
         
-        // left -> Event listener //             
+        right.addEventListener("click", () => {
+        carousel.scrollLeft +=carousel.offsetWidth; 
+        });
         
-        left.addEventListener("click", () => {​​        
-        carousel.scrollLeft -=carousel.offsetWidth;       
-        }​​);             
+        // left -> Event listener //
+        
+        left.addEventListener("click", () => {
+        carousel.scrollLeft -=carousel.offsetWidth;
+        });
+        
         </script>
 </html>
